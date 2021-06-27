@@ -16,11 +16,11 @@ const JobApp = () => {
             <ConnectedRouter history={history}>
                 <div className={classes.container}>
                     <Switch>
-                        <Route path="/">
-                            <JobList/>
-                        </Route>
                         <Route path="/job/:jobId">
                             <Job/>
+                        </Route>
+                        <Route path="/">
+                            <JobList/>
                         </Route>
                         <Route>
                             <NoMatch />
