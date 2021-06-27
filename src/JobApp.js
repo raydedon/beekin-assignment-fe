@@ -6,6 +6,7 @@ import classes from './jobApp.scss';
 import {Route, Switch} from 'react-router-dom';
 import JobList from './jobs/JobsList';
 import Job from './job/Job';
+import NoMatch from './job/NoMatch';
 
 const store = configureStore();
 
@@ -15,11 +16,14 @@ const JobApp = () => {
             <ConnectedRouter history={history}>
                 <div className={classes.container}>
                     <Switch>
+                        <Route path="/">
+                            <JobList/>
+                        </Route>
                         <Route path="/job/:jobId">
                             <Job/>
                         </Route>
-                        <Route path="/">
-                            <JobList/>
+                        <Route>
+                            <NoMatch />
                         </Route>
                     </Switch>
                 </div>

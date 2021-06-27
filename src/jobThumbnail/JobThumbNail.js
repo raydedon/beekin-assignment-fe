@@ -6,7 +6,7 @@ import {useDispatch} from 'react-redux';
 const JobThumbNail = (props) => {
     const dispatch = useDispatch();
     const {job: {designation, company, location, _id}} = props;
-    const onClickHandler = useCallback(() => dispatch(push(`/job/${_id}`)), [dispatch]);
+    const onClickHandler = useCallback(() => dispatch(push(`/job/${_id}`)), [dispatch, _id]);
     
     return (
         <div className={classes.container} onClick={onClickHandler}>

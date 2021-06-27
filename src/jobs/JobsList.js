@@ -9,7 +9,7 @@ const JobList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(fetchJobs());
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className={classes.container}>

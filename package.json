@@ -8,7 +8,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "lint": "eslint src || true --fix"
+    "lint": "eslint src || true --fix",
+    "static-run": "serve ./dist/"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -21,7 +22,7 @@
     "css-loader": "^5.2.5",
     "css-minimizer-webpack-plugin": "^3.0.0",
     "eslint": "^7.27.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.4",
     "html-webpack-plugin": "^5.3.1",

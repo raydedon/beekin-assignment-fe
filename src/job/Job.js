@@ -5,7 +5,7 @@ import {useParams} from 'react-router-dom';
 
 const Job = () => {
     const dispatch = useDispatch();
-    const jobs = useSelector((state) => state.job.jobs) ?? [];
+    const jobs = useSelector((state) => state.job.jobs);
     const [job, setJob] = useState({});
     let { jobId } = useParams();
     console.info(jobId);
@@ -13,7 +13,7 @@ const Job = () => {
         if(!jobs?.length) {
             dispatch(push('/'));
         }
-    }, [dispatch, jobs, push]);
+    }, [dispatch, jobs]);
     
     useEffect(() => {
         setJob(jobs.find((j) => j._id === jobId));
