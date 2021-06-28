@@ -11,7 +11,7 @@ const JobThumbNail = (props) => {
     return (
         <div className={classes.container} onClick={onClickHandler}>
             <h5>{designation}</h5>
-            <h6 className={classes.muted}>{company.map(c => c.name).join(',')}</h6>
+            <h6 className={classes.muted}>{company?.map(c => c.name).join(',')}</h6>
             <h6 className={classes.muted}>{location.join(',')}</h6>
         </div>
     );
