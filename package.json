@@ -46,6 +46,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^4.6.0",
+    "clsx": "^1.1.1",
     "connected-react-router": "^6.9.1",
     "fakerator": "^0.3.3",
     "history": "^4.10.1",
