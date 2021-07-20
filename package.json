@@ -9,7 +9,8 @@
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "lint": "eslint src || true --fix",
-    "static-run": "serve ./dist/"
+    "static-run": "serve ./dist/",
+    "deploy": "aws s3 sync ./dist/ s3://beekin2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

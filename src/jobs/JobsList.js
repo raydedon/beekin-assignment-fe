@@ -11,6 +11,10 @@ const JobList = () => {
     useEffect(() => {
         dispatch(fetchJobs());
     }, [dispatch]);
+
+    useEffect(() => {
+        console.dir(window.location);
+    }, []);
     
     if (!jobs?.length && !loading) return <div className={clsx(classes.container, classes.emptyContainer)}>No Data found</div>;
 
