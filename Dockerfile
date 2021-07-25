@@ -12,6 +12,8 @@ RUN npm i
 
 COPY . ./
 
-EXPOSE 8083
+RUN npm run build
 
-CMD ["npm", "start"]
+EXPOSE 3000
+
+CMD ["/bin/sh", "script.sh"]
