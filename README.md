@@ -2,7 +2,7 @@
 # Beekin assignment
 
 This project was mainly developed for a company called [Beekin](https://www.beekin.co/). This project was an assignment for recruitment. This is the front-end part of the assignment.
-The front-end leverages the following tech-stack:-
+The backend APIs are created here in this [repository](https://github.com/raydedon/jobs-app-beekin-assignment-be)
 
 
 ## Techstack
